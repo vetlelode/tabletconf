@@ -2,5 +2,6 @@
 Thanks to the fine fellas over at https://github.com/steinwurf/adb-join-wifi for creating the wifi configuration app
 
 ##Usage
-'''powershell
+```powershell
     powershell -file ./Production.ps1  -lokasjon LOKASJON
+```
