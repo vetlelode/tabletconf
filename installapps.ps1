@@ -1,4 +1,4 @@
-﻿param([string]$lokasjon="Finnsnes")
+﻿param([string]$lokasjon="Du Glemte Navn")
 Write-Output "Location is: $lokasjon"
 adb devices
 adb shell settings put global install_non_market_apps 1
