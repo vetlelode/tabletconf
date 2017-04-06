@@ -17,7 +17,7 @@ adb install -r apk\com.teamviewer.host.market.apk
 adb install -r apk\app-debug.apk
 adb install -r '.\apk\Kiosk Browser Lockdown_v2.5.6_apkpure.com.apk'
 Write-Output "Done."
-adb shell am start -n com.steinwurf.adbjoinwifi/com.steinwurf.adbjoinwifi.MainActivity -e ssid Ageto -e password_type WPA -e password $lokasjon+123
+adb shell am start -n com.steinwurf.adbjoinwifi/com.steinwurf.adbjoinwifi.MainActivity -e ssid PB-$lokasjon -e password_type WPA -e password $lokasjon+123
 Write-Output "Wifi configured, You should reboot to get all the settings in"
 adb push .\kioskbrowserconfig.xml /storage/sdcard0/kioskbrowserconfig.xml
 Write-Output "Pushing kiosk config"

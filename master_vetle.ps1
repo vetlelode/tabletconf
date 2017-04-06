@@ -12,5 +12,5 @@ powershell.exe .\bin\installer.ps1
 Write-Output "Done with installing apps"
 adb push kioskbrowserconfig.xml /storage/sdcard0/kioskbrowserconfig.xml
 <# Configure Wifi #>
-adb shell am start -n com.steinwurf.adbjoinwifi/com.steinwurf.adbjoinwifi.MainActivity -e ssid FF-Gjest
+adb shell am start -n com.steinwurf.adbjoinwifi/com.steinwurf.adbjoinwifi.MainActivity -e ssid Aget0 -e password_type WPA -e password $wifipass
 
